@@ -15,13 +15,13 @@
 #include<math.h>
 
 double RadToDeg(double radians){ // atan2 returns Radians not Degree!
-double degrees = (radians* 360) / (2.0 * M_PI);
-return degrees;
+	double degrees = (radians* 360) / (2.0 * M_PI);
+	return degrees;
 }
 
 int main(){
-	double x1 , y1 , x2 , y2;
-	scanf("%lf %lf %lf %lf" , &x1 , &y1 , &x2 , &y2);
-	printf("%lf", RadToDeg(fabs(atan2(y1 , x1) - atan2(y2 , x2))));
+	double x1, y1, x2, y2;
+	scanf("%lf %lf %lf %lf", &x1, &y1, &x2, &y2);
+	printf("%lf", RadToDeg(fabs(atan2(y1, x1) - atan2(y2, x2))));
 	return 0;
 }

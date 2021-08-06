@@ -8,8 +8,8 @@
 #include<math.h>
 
 int main(){
-	double a , b;
-	scanf("%lf %lf" , &a , &b);
-	printf("%lf", log(b)/log(a));
+	double a, b;
+	scanf("%lf %lf", &a, &b);
+	printf("%lf", log(b) / log(a));
 	return 0;
 }
